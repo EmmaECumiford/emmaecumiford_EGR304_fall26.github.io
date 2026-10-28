@@ -14,45 +14,12 @@ title: Component Selection Example
 
 | **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](image1.png)<br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Inexpensive[^1]<br>\* Compatible with PSoC<br>\* Meets surface mount constraint of project                                               | \* Requires external components and support circuitry for interface<br>\* Needs special PCB layout. |
-| ![](image3.png)<br>\* Option 2. <br>\* CTX936TR-ND surface mount oscillator <br>\* $1/each <br>\* [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940) | \* Outputs a square wave <br>\* Stable over operating temperature <br> \* Direct interface with PSoC (no external circuitry required) range | * More expensive <br>\* Slow shipping speed                                                         |
 
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+| ![](acuator.png)<br>Option 1.<br>VEVOR 12V Linear Actuator, 18 in stroke (OK648-1500N)<br>$42.90/each<br>[link to product](https://www.vevor.com/linear-actuators-c_11633/vevor-linear-actuator-12v-18-inch-high-load-330lbs-1500n-linear-actuator-0-19-s-linear-motion-actuator-with-mounting-bracket-and-ip54-protection-p_010211529221) | \* Runs on 12 V DC, which matches the board's supply<br>\* High load capacity (330 lbs / 1500 N)<br>\* Mounting brackets included<br>\* IP54 dust and splash protection | \* Draws up to 5 A, so the H-bridge must handle that current<br>\* No built-in position feedback<br>\* Only a 25% duty cycle<br>\* Slow (0.19 in/s) and physically large |
+| ![](Act2.png)<br>Option 2.<br>VEVOR 12V High-Speed Linear Actuator, 20 in stroke (OK648-1000N)<br>$43.90/each<br>[link to product](https://www.vevor.com/linear-actuators-c_11633/vevor-linear-actuator-12v-20inch-0-55-s-high-speed-220lbs-1000n-ip54-protection-p_010779702477) | \* Runs on 12 V DC, which matches the board's supply<br>\* Fast travel speed (0.55 in/s)<br>\* Quiet (≤50 dB)<br>\* Built-in limit switches stop the motor at the ends of travel<br>\* IP54 dust and splash protection | \* Lower load capacity than Option 1 (220 lbs / 1000 N)<br>\* No built-in position feedback<br>\* Current draw not listed, so H-bridge sizing is uncertain<br>\* Long (24.6 in retracted body) |
+                                             |
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+**Choice:** Option 1: VEVOR 12V Linear Actuator, 18 in stroke (OK648-1500N)
 
-### Style 2
+**Rationale:** This actuator runs directly on the board's 12 V supply and gives a higher load capacity (330 lbs / 1500 N) than Option 2. Its slower travel speed (0.19 in/s) makes position control from the microcontroller easier and more precise. VEVOR also lists its current draw (5 A), so we can confirm the H-bridge can handle it before ordering, while Option 2 gives no current rating. Although it is slower and lacks position feedback, its specifications are fully documented, which makes it the more predictable choice for our motor control board.
 
-> Also acceptable, more markdown friendly
-
-**External Clock Module**
-
-1. XC1259TR-ND surface mount crystal
-
-    ![](image1.png)
-
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
-
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
-
-1. CTX936TR-ND surface mount oscillator
-
-    ![](image3.png)
-
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
-
-    | Pros                                                              | Cons                |
-    | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
-
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
-
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.

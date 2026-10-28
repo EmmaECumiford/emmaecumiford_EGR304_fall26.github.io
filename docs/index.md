@@ -7,28 +7,32 @@ tags:
 <center>
 <font size= "6">Emma Cumiford Datasheet</font><br>
 as part of<br>
-<font size= "8"> Project Name</font><br>
+<font size= "8"> Project SBWB</font><br>
 for<br>
 <font size= "5"> Team 208 </font><br>
 
-**Submission: month, DD, YYYY**
-</center>
+Submission: October 28, 2026
 
 ## Introduction
 
-* This needs to be updated so that a reader gets an idea of the purpose of this datasheet.
+This datasheet documents the design process for the actuation and motor control portion of Project SBWB's Self-Balancing Work Bench.
 
 ### Project Summary
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/EGR304TeamTemplate/)
-
+Project SBWB is a self-balancing work bench that keeps its work surface level automatically. Sensing subsystems measure the bench's position, and the actuation subsystem physically adjusts the bench in response. My subsystem provides that motion: it receives signals from my teammates' boards, such as the distance-sensing subsystem, and drives a 12 V linear actuator to move the bench into balance. For a full overview of the project, including every team member's subsystem, see our [team report](https://embedded-systems-design.github.io/EGR304TeamTemplate/).
 
 ### My Contribution
 
-* This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
+My role on the team covers three main areas:
 
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
+* **Actuation board:** designing the hardware that physically adjusts the bench, built around a 12 V linear actuator
+* **Motor control:** using an H-bridge motor driver to let a PIC18F57Q43 Curiosity Nano control the actuator's direction and speed through PWM
+* **Coding:** writing the microcontroller firmware that reads incoming signals from teammates' boards and translates them into motor commands
 
-For all the sections
+To help navigate this datasheet:
+
+* For an overview of how the subsystem's components connect, see the [Block Diagram](LINK) section.
+* For the reasoning behind part choices such as the actuator, see the [Component Selection](LINK) section.
+* For the materials used to build the subsystem, see the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section.
+* For the electrical design, see the [Schematic](LINK) section.
+* For the firmware, see the [Software](LINK) section.
