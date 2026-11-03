@@ -22,7 +22,11 @@ Note: Setting it up as a table is nice because it is completely viewable without
 * You could also import your BOM via a screenshot of the spreadsheet created BOM
 
 ## Bill of Materials Example (as Image)
-![](BOM-Screenshot.png){style width: "2000"}
-**Figure 2:** Example Bill of Materials as a screenshot.
+![](EmmaC_EGR304_BOM.png){style width: "2000"}
+**Figure 2:** Emma Bill of Materials
 
 As you can see, the text can be difficult to read without opening the image.
+
+## Resources
+
+The BOM as a PDF download is available [here](emmabom.pdf), and a Microsoft Excel Sheet [here](EMMAC_EGR304_BOM.xlsx).
