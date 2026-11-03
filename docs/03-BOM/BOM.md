@@ -6,20 +6,9 @@ tags:
 ---
 
 ## Overview
-written context
+This Bill of Materials documents Project SBWB’s (Self-Balancing Work Bench) actuation and motor control board. It lists every part needed for one prototype unit, along with its manufacturer, supplier and datasheet. The board takes 12 VDC from a wall adapter through a barrel jack, regulates it down to 5 V for the logic, and uses an on-board H-bridge motor driver IC to drive the linear actuator under control of the microcontroller. Status LEDs and a pushbutton are included for indication and manual input. This serves as documentation of the parts that make up the subsystem, so it can be referred to and replicated.
 
-## Bill of Materials Example (as Table)
-
-*Table ##: An example of one approach to adding your BOM table to this section.*
-
-| **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacture** | **Manufacturer #** | **Vendor Link** |**Datasheet Link** | **Schematic Reference Designators** |
-|:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
-8-bit SIPO/SISO Shift Register, SOIC-16 package | 1 | $0.49 | $ 0.49 | NXP | 74HC595D,112 | [DigiKey](https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC595D-112/763550) | [datasheet link](https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf) | U1 |
-0.1 µF Ceramic Capacitor, +/-10%, X7R, 50V, 0805 package |10 | 0.2750 | $2.75 | KEMET | C0805F104K5RACTU | PRLTA 109 |n/a | C2, C4, C6, C7, C8, C9, C10, C11, C12, C16
-
-Note: Setting it up as a table is nice because it is completely viewable without scaling issues. <ins>Downside</ins> is that you have to do the math.
-
-* You could also import your BOM via a screenshot of the spreadsheet created BOM
+Some important notes: Unit Quantity is how many of each component are in one module. Unit Prototype Cost is the cost of one of that component, and Total Prototype Cost is what it costs to buy enough of that part for one complete prototype. Parts listed as $0.00 come from the PRLTA 109 lab stock. # Ordered counts extra parts bought for breadboarding and replacements, not the number the board needs. The Date Ordered, # Received and Surplus columns track orders as they come in.
 
 ## Bill of Materials Example (as Image)
 ![](EmmaC_EGR304_BOM.png){style width: "2000"}
