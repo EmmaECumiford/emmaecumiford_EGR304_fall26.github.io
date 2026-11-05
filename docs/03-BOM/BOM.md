@@ -18,4 +18,5 @@ As you can see, the text can be difficult to read without opening the image.
 
 ## Resources
 
-The BOM as a PDF download is available [here](emmabom.pdf), and a Microsoft Excel Sheet [here](EMMAC_EGR304_BOM.xlsx).
+The BOM as a PDF download is available [here](EMMAC_EGR304_BOM_PDF.pdf), and a Microsoft Excel Sheet [here](EMMAC_EGR304_BOM.xlsx).
+`
