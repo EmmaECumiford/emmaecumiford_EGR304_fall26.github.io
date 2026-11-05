@@ -7,7 +7,7 @@ title: Schematic
 This schematic shows the actuation and motor control board for Project SBWB (Self-Balancing Work Bench). The board's job is to move the actuator when the microcontroller tells it to. Power comes in at 12 V DC through a barrel jack or a 2-pin header, passes through a fuse, and is regulated down to 5 V by an LM7805 to power the logic. The Curiosity Nano microcontroller sends forward and reverse signals to a FAN8100N H-bridge motor driver, which switches power to the actuator through the motor connector. Three headers carry the microcontroller's I/O pins off the board so other subsystems, such as the distance-sensing board, can connect. A power indicator LED, two test points, a debug LED, and a debug push button make the board easier to test and troubleshoot. This schematic documents how the subsystem is wired, so it can be referred to, built, and replicated.
 
 
-![Schematic2](schematic.png){style width:"350" height:"300;"}
+![Schematic](Schematic2.png){style width:"350" height:"300;"}
 **Figure ##:** Showing a example schematic.
 
 ## Schematic Description
