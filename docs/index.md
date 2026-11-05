@@ -1,5 +1,5 @@
 ---
-title: Emma Cumiford's 304 Contributions
+title: Welcome! 
 tags:
 - tag1
 - tag2
