@@ -14,7 +14,6 @@ Some important notes: Unit Quantity is how many of each component are in one mod
 ![](EmmaC_EGR304_BOM.png){style width: "2000"}
 **Figure 2:** Emma Bill of Materials
 
-As you can see, the text can be difficult to read without opening the image.
 
 ## Resources
 
