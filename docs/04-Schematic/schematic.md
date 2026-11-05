@@ -8,7 +8,7 @@ This schematic shows the actuation and motor control board for Project SBWB (Sel
 
 
 ![Schematic](Schematic2.png){style width:"350" height:"300;"}
-**Figure ##:** Showing a example schematic.
+**Figure ##:** Showing Emma's Schematic
 
 ## Schematic Description
 
