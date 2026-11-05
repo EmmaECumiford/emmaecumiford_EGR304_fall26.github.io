@@ -12,7 +12,7 @@ This block diagram shows how my individual subsystem, the actuator control board
 * **Actuator:** A VEVOR OK648 12 V linear actuator provides the system's mechanical motion.
 * **Motor driver:** A FAN8011N H-bridge receives the 3.3 V PWM signal from the microcontroller on IN1. It switches 12 V DC to the actuator, letting the low-power microcontroller control the high-power motor.
 * **Power levels:**
-  * **12 V DC:** powers the actuator through the H-bridge
+  * **6 V DC:** powers the actuator through the H-bridge
   * **3.3 V:** used for all logic-level signals between the microcontroller, the H-bridge, and the team connectors
 * **Power source:** An external 12 V DC supply powers the board. It feeds the actuator directly through the H-bridge and is regulated down for the logic circuitry.
 * **Sensor:** This subsystem has no sensor of its own. It acts on commands and data that come from teammates' boards through the team connectors.
