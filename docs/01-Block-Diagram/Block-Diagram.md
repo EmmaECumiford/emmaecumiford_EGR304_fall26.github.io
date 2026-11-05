@@ -20,4 +20,4 @@ This block diagram shows how my individual subsystem, the actuator control board
 
 ## Block Diagram
 
-![Individual block diagram for the actuator control subsystem](block.png)
+![Individual block diagram for the actuator control subsystem](Screenshot 2026-11-04 205254.png)
