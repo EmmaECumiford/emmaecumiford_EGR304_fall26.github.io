@@ -25,7 +25,7 @@ Project SBWB is a self-balancing work bench that keeps its work surface level au
 
 My role on the team covers two main areas:
 
-* **Actuation board:** designing the hardware that physically adjusts the bench, built around a 12 V linear actuator
+* **Actuation board:** designing the hardware that physically adjusts the bench, built around a 5-12 V linear actuator
 * **Motor control:** using an H-bridge motor driver to let a PIC18F57Q43 Curiosity Nano control the actuator's direction and speed through PWM.
 
 To help navigate this datasheet:
