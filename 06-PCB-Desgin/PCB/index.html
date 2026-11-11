@@ -984,7 +984,7 @@
   <h1>PCB Design</h1>
 
 <h2 id="overview">Overview</h2>
-<p>This page documents the printed circuit board (PCB) layout for the actuation and motor control board of Project SBWB (Self-Balancing Work Bench). The layout was created in KiCad 10 from the updated schematic on the <a href="../../04-Schematic/schematic/">Schematics</a> page and manufactured by PCBWay as a two-layer board. The final design passes the KiCad Design Rules Check (DRC) with zero errors and was checked with the JLCDFM manufacturability tool before ordering.</p>
+<p>This page documents the printed circuit board (PCB) layout for the actuation and motor control board of Project SBWB (Self-Balancing Work Bench). The layout was created in KiCad 10 from the updated schematic on the <a href="https://emmaecumiford.github.io/emmaecumiford_EGR304_fall26.github.io/04-Schematic/schematic/">Schematics</a> page and manufactured by PCBWay as a two-layer board. The final design passes the KiCad Design Rules Check (DRC) with zero errors and was checked with the JLCDFM manufacturability tool before ordering.</p>
 <p>The board takes 12 V DC in through a switched barrel jack and a 2.5 A fuse. An LM7805 regulates it to 5 V for the logic, and a Curiosity Nano microcontroller drives the actuator through a FAN8100N H-bridge. Headers along the right edge connect the board to the rest of the team's system.</p>
 <h2 id="pcb-layout">PCB Layout</h2>
 <p><img alt="Full PCB layout showing both copper layers" src="../PCB.png" style="width:45%;" /></p>
@@ -1072,7 +1072,7 @@
 <p><strong>Routing Practices:</strong> The board was routed with a combination of the autorouter and hand routing. The power and ground traces were routed by hand. Vias were enlarged to give a 0.2 mm annular ring for reliable manufacturing.</p>
 <h2 id="design-rules-check-drc">Design Rules Check (DRC)</h2>
 <p>The final design passes the KiCad DRC with 0 errors, 0 warnings, and 0 unconnected pads. Two cosmetic silkscreen warnings were reviewed and excluded.</p>
-<p><img alt="KiCad DRC results showing zero errors" src="DRCEC.png" style="width:100%;" /></p>
+<p><img alt="KiCad DRC results showing zero errors" src="../DRCEC.png" style="width:100%;" /></p>
 <p><strong>Figure 6:</strong> KiCad DRC results showing zero errors</p>
 <h2 id="manufacturing-verification">Manufacturing Verification</h2>
 <p>The Gerber and drill files were checked with the JLCDFM online DFM tool before ordering from PCBWay. All routing, trace width and spacing, annular ring, hole clearance, slot, and drill checks passed (all 100 holes rated Good). The remaining flags are false positives:</p>
@@ -1083,7 +1083,7 @@
 <p>Custom footprints are stored in the <code>FootprintLib_EGR304_EC</code> footprint library, which is included in the KiCad project zip.</p>
 <h2 id="resources">Resources</h2>
 <ul>
-<li>PCB layout (top and bottom) as a PDF: <a href="../PCB_Layout.pdf"><em>here</em></a></li>
+<li>PCB layout (top and bottom) as a PDF: <a href="../PCB_Layout%20%281%29.pdf"><em>here</em></a></li>
 <li>KiCad project zip, including the custom footprint library: <a href="../yippiept2.zip"><em>here</em></a></li>
 <li>Gerber and drill files zip: <a href="../gerber.zip"><em>here</em></a></li>
 </ul>
