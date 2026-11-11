@@ -91,7 +91,7 @@ The board takes 12 V DC in through a switched barrel jack and a 2.5 A fuse. An L
 The final design passes the KiCad DRC with 0 errors, 0 warnings, and 0 unconnected pads. Two cosmetic silkscreen warnings were reviewed and excluded.
 
 <p align="center">
-  <img src="DRC_Results.png" alt="KiCad DRC results showing zero errors" width="500">
+  <img src="DRCEC.png" alt="KiCad DRC results showing zero errors" width="500">
 </p>
 <p align="center"><b>Figure 5:</b> KiCad DRC results showing zero errors</p>
 
