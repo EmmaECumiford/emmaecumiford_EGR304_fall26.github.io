@@ -1,0 +1,28 @@
+** Drc report for yippiept2.kicad_pcb **
+** Created on 2026-11-10T22:15:28 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 2 DRC violations **
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning (excluded)
+    @(110.0000 mm, 132.5000 mm): Segment of J1 on F.Silkscreen
+    @(106.0000 mm, 132.5000 mm): PTH pad 3 [unconnected-(J1-Pad3)] of J1
+    cosmetic
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning (excluded)
+    @(110.0000 mm, 132.5000 mm): Segment of J1 on F.Silkscreen
+    @(110.7000 mm, 135.5000 mm): PTH pad 2 [Earth] of J1
+    cosmetic
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
