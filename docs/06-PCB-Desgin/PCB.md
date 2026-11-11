@@ -23,7 +23,7 @@ The board takes 12 V DC in through a switched barrel jack and a 2.5 A fuse. An L
 
 <table>
   <tr>
-    <td align="center" width="50%"><img scr="../PCB_Top.png" alt="Top (front) layer of the PCB layout" width="260"></td>
+    <td align="center" width="50%"><img scr="../PCB.png" alt="Top (front) layer of the PCB layout" width="260"></td>
     <td align="center" width="50%"><img scr="../PCB_Bottom.png" alt="Bottom (back) layer of the PCB layout" width="260"></td>
   </tr>
   <tr>
