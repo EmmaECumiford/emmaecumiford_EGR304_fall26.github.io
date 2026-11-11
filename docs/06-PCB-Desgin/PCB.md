@@ -80,6 +80,6 @@ Custom footprints are stored in the `FootprintLib_EGR304_EC` footprint library, 
 
 ## Resources
 
-- PCB layout (top and bottom) as a PDF: [*here*](PCB_Layout.pdf)
+- PCB layout (top and bottom) as a PDF: [*here*](PCB_Layout (1).pdf)
 - KiCad project zip, including the custom footprint library: [*here*](yippiept2.zip)
 - Gerber and drill files zip: [*here*](gerber.zip)
