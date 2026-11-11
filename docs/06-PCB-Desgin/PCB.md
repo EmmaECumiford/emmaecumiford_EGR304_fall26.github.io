@@ -7,52 +7,27 @@ tags:
 
 ## Overview
 
-This page documents the printed circuit board (PCB) layout for the actuation and motor control board of Project SBWB (Self-Balancing Work Bench). The layout was created in KiCad 10 from the updated schematic on the [Schematics](../04-Schematic/[SCHEMATIC-PAGE].md) page and manufactured by PCBWay as a two-layer board. The final design passes the KiCad Design Rules Check (DRC) with zero errors and was checked with the JLCDFM manufacturability tool before ordering.
+This page documents the printed circuit board (PCB) layout for the actuation and motor control board of Project SBWB (Self-Balancing Work Bench). The layout was created in KiCad 10 from the updated schematic on the [Schematics](../04-Schematic/schematic.md) page and manufactured by PCBWay as a two-layer board. The final design passes the KiCad Design Rules Check (DRC) with zero errors and was checked with the JLCDFM manufacturability tool before ordering.
 
 The board takes 12 V DC in through a switched barrel jack and a 2.5 A fuse. An LM7805 regulates it to 5 V for the logic, and a Curiosity Nano microcontroller drives the actuator through a FAN8100N H-bridge. Headers along the right edge connect the board to the rest of the team's system.
 
 ## PCB Layout
 
-<p align="center">
-  <img src="../PCB.png" alt="Full PCB layout showing both copper layers" width="320">
-</p>
-<p align="center">
-  <b>Figure 1:</b> Full PCB layout, both copper layers<br>
-  <em>Top copper is shown in red and bottom copper in blue. The wide 2.13 mm traces carry +12 V, +5 V, and ground, and the 0.2 mm traces carry signals.</em>
-</p>
+![Full PCB layout showing both copper layers](PCB.png){ style="width:45%;" }
 
-<table>
-  <tr>
-    <td align="center" width="50%"><img src="../PCB.png" alt="Top (front) layer of the PCB layout" width="260"></td>
-    <td align="center" width="50%"><img src="../PCB_Bottom.png" alt="Bottom (back) layer of the PCB layout" width="260"></td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>Figure 2:</b> Top (front) layer<br>
-      <em>Top copper with the +5V pour, power traces, and top silkscreen.</em>
-    </td>
-    <td align="center">
-      <b>Figure 3:</b> Bottom (back) layer<br>
-      <em>Bottom copper with the ground (Earth) pour and signal routing.</em>
-    </td>
-  </tr>
-</table>
+**Figure 1:** Full PCB layout, both copper layers. Top copper is shown in red and bottom copper in blue. The wide 2.13 mm traces carry +12 V, +5 V, and ground, and the 0.2 mm traces carry signals.
 
-<p align="center">
-  <img src="../PCB3DTop.png" alt="3D render of the board, top view" width="600">
-</p>
-<p align="center">
-  <b>Figure 4:</b> 3D render, top view<br>
-  <em>Shows the component placement, the four headers (J4–J7), and the "EC Group 208 SBWB Motor Control Board" label.</em>
-</p>
+![Top (front) layer of the PCB layout](PCB.png){ style="width:45%;" } ![Bottom (back) layer of the PCB layout](PCB_Bottom.png){ style="width:45%;" }
 
-<p align="center">
-  <img src="../PCB3D_iso.png" alt="3D render of the board, isometric view" width="550">
-</p>
-<p align="center">
-  <b>Figure 5:</b> 3D render, isometric view<br>
-  <em>Shows the through-hole parts at their real heights, including the LM7805 regulator, the FAN8100N H-bridge, the LEDs, and the debug push button.</em>
-</p>
+**Figure 2 (left):** Top (front) layer, with the +5V pour, power traces, and top silkscreen. **Figure 3 (right):** Bottom (back) layer, with the ground (Earth) pour and signal routing.
+
+![3D render of the board, top view](PCB3DTop.png){ style="width:100%;" }
+
+**Figure 4:** 3D render, top view. Shows the component placement, the four headers (J4–J7), and the "EC Group 208 SBWB Motor Control Board" label.
+
+![3D render of the board, isometric view](PCB3D_iso.png){ style="width:100%;" }
+
+**Figure 5:** 3D render, isometric view. Shows the through-hole parts at their real heights, including the LM7805 regulator, the FAN8100N H-bridge, the LEDs, and the debug push button.
 
 ## Board Specifications
 
@@ -90,10 +65,9 @@ The board takes 12 V DC in through a switched barrel jack and a 2.5 A fuse. An L
 
 The final design passes the KiCad DRC with 0 errors, 0 warnings, and 0 unconnected pads. Two cosmetic silkscreen warnings were reviewed and excluded.
 
-<p align="center">
-  <img src="../DRCEC.png" alt="KiCad DRC results showing zero errors" width="500">
-</p>
-<p align="center"><b>Figure 6:</b> KiCad DRC results showing zero errors</p>
+![KiCad DRC results showing zero errors](DRCEC.png){ style="width:100%;" }
+
+**Figure 6:** KiCad DRC results showing zero errors
 
 ## Manufacturing Verification
 
