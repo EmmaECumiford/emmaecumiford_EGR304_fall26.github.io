@@ -984,50 +984,17 @@
   <h1>PCB Design</h1>
 
 <h2 id="overview">Overview</h2>
-<p>This page documents the printed circuit board (PCB) layout for the actuation and motor control board of Project SBWB (Self-Balancing Work Bench). The layout was created in KiCad 10 from the updated schematic on the <a href="../04-Schematic/[SCHEMATIC-PAGE].md">Schematics</a> page and manufactured by PCBWay as a two-layer board. The final design passes the KiCad Design Rules Check (DRC) with zero errors and was checked with the JLCDFM manufacturability tool before ordering.</p>
+<p>This page documents the printed circuit board (PCB) layout for the actuation and motor control board of Project SBWB (Self-Balancing Work Bench). The layout was created in KiCad 10 from the updated schematic on the <a href="../../04-Schematic/schematic/">Schematics</a> page and manufactured by PCBWay as a two-layer board. The final design passes the KiCad Design Rules Check (DRC) with zero errors and was checked with the JLCDFM manufacturability tool before ordering.</p>
 <p>The board takes 12 V DC in through a switched barrel jack and a 2.5 A fuse. An LM7805 regulates it to 5 V for the logic, and a Curiosity Nano microcontroller drives the actuator through a FAN8100N H-bridge. Headers along the right edge connect the board to the rest of the team's system.</p>
 <h2 id="pcb-layout">PCB Layout</h2>
-<p align="center">
-  <img src="../PCB.png" alt="Full PCB layout showing both copper layers" width="320">
-</p>
-<p align="center">
-  <b>Figure 1:</b> Full PCB layout, both copper layers<br>
-  <em>Top copper is shown in red and bottom copper in blue. The wide 2.13 mm traces carry +12 V, +5 V, and ground, and the 0.2 mm traces carry signals.</em>
-</p>
-
-<table>
-  <tr>
-    <td align="center" width="50%"><img src="../PCB.png" alt="Top (front) layer of the PCB layout" width="260"></td>
-    <td align="center" width="50%"><img src="../PCB_Bottom.png" alt="Bottom (back) layer of the PCB layout" width="260"></td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>Figure 2:</b> Top (front) layer<br>
-      <em>Top copper with the +5V pour, power traces, and top silkscreen.</em>
-    </td>
-    <td align="center">
-      <b>Figure 3:</b> Bottom (back) layer<br>
-      <em>Bottom copper with the ground (Earth) pour and signal routing.</em>
-    </td>
-  </tr>
-</table>
-
-<p align="center">
-  <img src="../PCB3DTop.png" alt="3D render of the board, top view" width="600">
-</p>
-<p align="center">
-  <b>Figure 4:</b> 3D render, top view<br>
-  <em>Shows the component placement, the four headers (J4–J7), and the "EC Group 208 SBWB Motor Control Board" label.</em>
-</p>
-
-<p align="center">
-  <img src="../PCB3D_iso.png" alt="3D render of the board, isometric view" width="550">
-</p>
-<p align="center">
-  <b>Figure 5:</b> 3D render, isometric view<br>
-  <em>Shows the through-hole parts at their real heights, including the LM7805 regulator, the FAN8100N H-bridge, the LEDs, and the debug push button.</em>
-</p>
-
+<p><img alt="Full PCB layout showing both copper layers" src="../PCB.png" style="width:45%;" /></p>
+<p><strong>Figure 1:</strong> Full PCB layout, both copper layers. Top copper is shown in red and bottom copper in blue. The wide 2.13 mm traces carry +12 V, +5 V, and ground, and the 0.2 mm traces carry signals.</p>
+<p><img alt="Top (front) layer of the PCB layout" src="../PCB.png" style="width:45%;" /> <img alt="Bottom (back) layer of the PCB layout" src="../PCB_Bottom.png" style="width:45%;" /></p>
+<p><strong>Figure 2 (left):</strong> Top (front) layer, with the +5V pour, power traces, and top silkscreen. <strong>Figure 3 (right):</strong> Bottom (back) layer, with the ground (Earth) pour and signal routing.</p>
+<p><img alt="3D render of the board, top view" src="../PCB3DTop.png" style="width:100%;" /></p>
+<p><strong>Figure 4:</strong> 3D render, top view. Shows the component placement, the four headers (J4–J7), and the "EC Group 208 SBWB Motor Control Board" label.</p>
+<p><img alt="3D render of the board, isometric view" src="../PCB3D_iso.png" style="width:100%;" /></p>
+<p><strong>Figure 5:</strong> 3D render, isometric view. Shows the through-hole parts at their real heights, including the LM7805 regulator, the FAN8100N H-bridge, the LEDs, and the debug push button.</p>
 <h2 id="board-specifications">Board Specifications</h2>
 <table>
 <thead>
@@ -1105,11 +1072,8 @@
 <p><strong>Routing Practices:</strong> The board was routed with a combination of the autorouter and hand routing. The power and ground traces were routed by hand. Vias were enlarged to give a 0.2 mm annular ring for reliable manufacturing.</p>
 <h2 id="design-rules-check-drc">Design Rules Check (DRC)</h2>
 <p>The final design passes the KiCad DRC with 0 errors, 0 warnings, and 0 unconnected pads. Two cosmetic silkscreen warnings were reviewed and excluded.</p>
-<p align="center">
-  <img src="../DRCEC.png" alt="KiCad DRC results showing zero errors" width="500">
-</p>
-<p align="center"><b>Figure 6:</b> KiCad DRC results showing zero errors</p>
-
+<p><img alt="KiCad DRC results showing zero errors" src="DRCEC.png" style="width:100%;" /></p>
+<p><strong>Figure 6:</strong> KiCad DRC results showing zero errors</p>
 <h2 id="manufacturing-verification">Manufacturing Verification</h2>
 <p>The Gerber and drill files were checked with the JLCDFM online DFM tool before ordering from PCBWay. All routing, trace width and spacing, annular ring, hole clearance, slot, and drill checks passed (all 100 holes rated Good). The remaining flags are false positives:</p>
 <ul>
