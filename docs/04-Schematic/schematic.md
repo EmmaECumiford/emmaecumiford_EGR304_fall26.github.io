@@ -34,4 +34,4 @@ This schematic shows the actuation and motor control board for Project SBWB. The
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](ExampleSchematic.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
+The schematic as a PDF download is available [*here*](schematic.pdf), and the Zip folder of the project [*here*](yippiept2.zip).
